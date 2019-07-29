@@ -1,19 +1,12 @@
 {
-  "name": "mvc_design",
+  "name": "burger",
   "version": "1.0.0",
-  "description": "",
+  "description": "order and eat burgers",
   "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "express-handlebars": "^3.1.0",
-    "mysql": "^2.17.1"
+     "express": "^4.16.3"
   },
-  "devDependencies": {
-    "handlebars-helper-css": "^0.1.0"
+  "scripts": {
+    "start": "node server.js"
   }
 }
