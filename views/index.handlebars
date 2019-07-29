@@ -1,0 +1,56 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-12">
+    <center><h1>Welcome to Paisano's Burger</h1></center>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+    <center><img src="https://www.sccpre.cat/mypng/detail/7-73546_hamburger-clip-art-web-clipart-transparent-background-burger.png" alt="burger" height="100" width="100"></center>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <center><h3>Burgers you ordered!</h3>
+        
+        {{#each burgers}}
+        {{#unless devoured}}
+        {{> burgers/burger-block devoured=true}}
+        {{/unless}}
+        {{/each}}
+        </center>
+    </div>
+
+    <div class="col-md-6">
+      <center><h3>Burgers you ate!</h3>
+        
+        {{#each burgers}}
+        {{#if devoured}}
+        {{> burgers/burger-block2 devoured=false}}
+        {{/if}}
+        {{/each}}
+        
+        </center>
+    </div>
+  </div>
+
+  <div class="row">     
+
+    <div class="col-md-12">
+      <center><h3>Add a Burger</h3>
+      <form class="create-form">
+
+    <div class="form-group">
+      <label for="ca">Burger Name:</label>
+      <input type="text" id="ca" name="burger_name">
+    </div>
+
+    <button type="submit">Add Burger</button>
+    </form></center>
+    </div>
+  </div>
+
+</div>
